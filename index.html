@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Casa do Noel: loja natalina fictícia para a AV2 escolar.">
+  <title>Início | Casa do Noel</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <div class="aviso">✦ A magia do Natal começa aqui! ✦</div>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logo da Casa do Noel">
+        <span>Casa do Noel</span>
+      </a>
+      <button id="botao-menu" class="botao-menu" type="button" aria-expanded="false" aria-label="Abrir o menu">☰</button>
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <a href="index.html" class="ativo" aria-current="page">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="acoes">
+        <button id="botao-musica" class="botao-pequeno" type="button">♫ Som</button>
+        <button id="abrir-carrinho" class="botao-pequeno" type="button">Sacola (<span id="quantidade-carrinho">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="bola bola-1" data-velocidade="0.16" aria-hidden="true"></div>
+        <div class="bola bola-2" data-velocidade="0.32" aria-hidden="true"></div>
+        <article class="slide ativo">
+          <div><span class="etiqueta">Coleção especial</span><h1>O Natal chegou na Casa do Noel!</h1>
+            <p>Roupas e acessórios natalinos para presentear e celebrar.</p><a class="botao" href="produtos.html">Ver produtos</a></div>
+          <img src="img/natal/sala-de-natal.webp" alt="Sala decorada com árvore e presentes de Natal">
+        </article>
+        <article class="slide">
+          <div><span class="etiqueta">Presentes com carinho</span><h2>Escolha um presente especial</h2>
+            <p>Encontre suéteres, pijamas e acessórios para toda a família.</p><a class="botao" href="produtos.html">Ver coleção</a></div>
+          <img src="img/natal/presentes-ao-pe-da-arvore.webp" alt="Presentes embaixo de uma árvore de Natal">
+        </article>
+        <article class="slide">
+          <div><span class="etiqueta">Feliz Natal</span><h2>Entre no clima de dezembro</h2>
+            <p>Conheça a nossa galeria de inspirações natalinas.</p><a class="botao" href="galeria.html">Ver galeria</a></div>
+          <img src="img/natal/guirlanda.webp" alt="Guirlanda natalina vermelha e verde">
+        </article>
+        <div class="controle-slides">
+          <button id="anterior" type="button" aria-label="Slide anterior">‹</button>
+          <span id="indicadores" aria-label="Indicadores do carrossel"></span>
+          <button id="proximo" type="button" aria-label="Próximo slide">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao container">
+      <span class="etiqueta">Escolha sua categoria</span><h2>Encontre o seu estilo de Natal</h2>
+      <p>50 produtos em cinco categorias diferentes.</p>
+      <div class="categorias">
+        <a href="produtos.html?categoria=Su%C3%A9teres"><img loading="lazy" src="img/produtos/produto-01.webp" alt="Suéteres natalinos"><strong>Suéteres</strong></a>
+        <a href="produtos.html?categoria=Pijamas"><img loading="lazy" src="img/produtos/produto-11.webp" alt="Pijamas natalinos"><strong>Pijamas</strong></a>
+        <a href="produtos.html?categoria=Gorros%20e%20Cachec%C3%B3is"><img loading="lazy" src="img/produtos/produto-21.webp" alt="Gorros e Cachecóis natalinos"><strong>Gorros e Cachecóis</strong></a>
+        <a href="produtos.html?categoria=Meias%20e%20Luvas"><img loading="lazy" src="img/produtos/produto-31.webp" alt="Meias e Luvas natalinos"><strong>Meias e Luvas</strong></a>
+        <a href="produtos.html?categoria=Fantasias"><img loading="lazy" src="img/produtos/produto-41.webp" alt="Fantasias natalinos"><strong>Fantasias</strong></a>
+      </div>
+    </section>
+
+    <section class="secao destaque-fundo"><div class="container">
+      <span class="etiqueta">Seleção da loja</span><h2>Produtos em destaque</h2>
+      <p>Algumas opções para começar as compras de Natal.</p>
+      <div id="destaques" class="grade-produtos"></div>
+      <p class="centro"><a class="botao" href="produtos.html">Ver todos os 50 produtos</a></p>
+    </div></section>
+
+    <section class="secao container">
+      <span class="etiqueta">Galeria</span><h2>Um pouco de magia natalina</h2>
+      <div class="mini-galeria">
+        <a href="galeria.html"><img src="img/natal/arvore-de-natal.webp" alt="Árvore de Natal" loading="lazy"><strong>Árvores</strong></a>
+        <a href="galeria.html"><img src="img/natal/presentes.webp" alt="Presentes de Natal" loading="lazy"><strong>Presentes</strong></a>
+        <a href="galeria.html"><img src="img/natal/lareira.webp" alt="Lareira natalina" loading="lazy"><strong>Decoração</strong></a>
+        <a href="galeria.html"><img src="img/natal/vilarejo-nevado.webp" alt="Vilarejo na neve" loading="lazy"><strong>Inverno</strong></a>
+      </div>
+    </section>
+    <section class="secao centro destaque-fundo"><div class="container">
+      <h2>Faltam quantos dias para o Natal?</h2>
+      <p id="contagem" class="contagem">Carregando...</p>
+      <a href="sobre.html">Conheça a nossa história</a>
+    </div></section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Casa do Noel</strong> — Pietro Fernandes e Lucas Torres</p>
+      <p>Projeto escolar de Desenvolvimento Web • Loja demonstrativa</p>
+    </div>
+  </footer>
+
+  <div id="fundo-carrinho" class="fundo-carrinho" hidden></div>
+  <aside id="painel-carrinho" class="painel-carrinho" role="dialog" aria-label="Sacola de compras" aria-modal="true" hidden>
+    <div class="linha"><h2>Minha sacola</h2><button id="fechar-carrinho" type="button">Fechar ×</button></div>
+    <div id="itens-carrinho"></div>
+    <div class="resumo-sacola">
+      <strong>Total: <span id="total-carrinho">R$ 0,00</span></strong>
+      <p>Compra fictícia, somente para a atividade.</p>
+      <button id="limpar-carrinho" class="botao-secundario" type="button">Limpar sacola</button>
+    </div>
+  </aside>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

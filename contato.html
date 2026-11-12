@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Casa do Noel: loja natalina fictícia para a AV2 escolar.">
+  <title>Contato | Casa do Noel</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <div class="aviso">✦ A magia do Natal começa aqui! ✦</div>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logo da Casa do Noel">
+        <span>Casa do Noel</span>
+      </a>
+      <button id="botao-menu" class="botao-menu" type="button" aria-expanded="false" aria-label="Abrir o menu">☰</button>
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html" class="ativo" aria-current="page">Contato</a>
+      </nav>
+      <div class="acoes">
+        <button id="botao-musica" class="botao-pequeno" type="button">♫ Som</button>
+        <button id="abrir-carrinho" class="botao-pequeno" type="button">Sacola (<span id="quantidade-carrinho">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao container">
+      <span class="etiqueta">Entre em contato</span><h1>Fale com a Casa do Noel</h1>
+      <p>Formulário fictício usado para demonstrar validação com JavaScript.</p>
+      <div class="duas-colunas">
+        <form id="form-contato" novalidate>
+          <label for="nome">Nome *</label><input id="nome" type="text" required placeholder="Seu nome">
+          <label for="email">E-mail *</label><input id="email" type="email" required placeholder="exemplo@email.com">
+          <label for="assunto">Assunto *</label><input id="assunto" type="text" required placeholder="Sobre o que deseja falar?">
+          <label for="mensagem">Mensagem *</label><textarea id="mensagem" rows="5" required placeholder="Escreva sua mensagem..."></textarea>
+          <button class="botao" type="submit">Conferir mensagem</button>
+          <p id="mensagem-form" role="status" aria-live="polite"></p>
+        </form>
+        <div class="bloco-contato">
+          <img class="imagem-contato" src="img/natal/presentes.webp" alt="Presentes natalinos">
+          <h2>Nossa loja fictícia</h2>
+          <p><strong>Endereço:</strong> Rua do Natal, 25 — Cidade do Noel</p>
+          <p><strong>Telefone:</strong> somente demonstração</p>
+          <p><strong>Instagram:</strong> @casadonoel (nome ilustrativo)</p>
+          <p>Este site não recebe pedidos, pagamentos nem mensagens reais.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Casa do Noel</strong> — Pietro Fernandes e Lucas Torres</p>
+      <p>Projeto escolar de Desenvolvimento Web • Loja demonstrativa</p>
+    </div>
+  </footer>
+
+  <div id="fundo-carrinho" class="fundo-carrinho" hidden></div>
+  <aside id="painel-carrinho" class="painel-carrinho" role="dialog" aria-label="Sacola de compras" aria-modal="true" hidden>
+    <div class="linha"><h2>Minha sacola</h2><button id="fechar-carrinho" type="button">Fechar ×</button></div>
+    <div id="itens-carrinho"></div>
+    <div class="resumo-sacola">
+      <strong>Total: <span id="total-carrinho">R$ 0,00</span></strong>
+      <p>Compra fictícia, somente para a atividade.</p>
+      <button id="limpar-carrinho" class="botao-secundario" type="button">Limpar sacola</button>
+    </div>
+  </aside>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

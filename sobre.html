@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Casa do Noel: loja natalina fictícia para a AV2 escolar.">
+  <title>Sobre | Casa do Noel</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <div class="aviso">✦ A magia do Natal começa aqui! ✦</div>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logo da Casa do Noel">
+        <span>Casa do Noel</span>
+      </a>
+      <button id="botao-menu" class="botao-menu" type="button" aria-expanded="false" aria-label="Abrir o menu">☰</button>
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html" class="ativo" aria-current="page">Sobre</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="acoes">
+        <button id="botao-musica" class="botao-pequeno" type="button">♫ Som</button>
+        <button id="abrir-carrinho" class="botao-pequeno" type="button">Sacola (<span id="quantidade-carrinho">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao container">
+      <span class="etiqueta">Quem somos</span><h1>Conheça a Casa do Noel</h1>
+      <div class="duas-colunas">
+        <div><p>A Casa do Noel é uma loja <strong>fictícia</strong>, criada para a AV2 de Desenvolvimento Web do primeiro ano de TI.</p>
+          <p>Nosso objetivo é imaginar uma loja de roupas e presentes de Natal, com um site agradável e fácil de usar.</p>
+          <h2>Missão</h2><p>Ajudar as famílias a escolher presentes de Natal.</p>
+          <h2>Visão</h2><p>Ser uma loja lembrada na época natalina.</p>
+          <h2>Valores</h2><p>Criatividade, respeito, amizade e união.</p>
+        </div>
+        <img class="foto-grande" src="img/natal/sala-de-natal.webp" alt="Sala de Natal decorada">
+      </div>
+    </section>
+    <section class="secao destaque-fundo centro"><div class="container">
+      <h2>Nosso projeto escolar</h2>
+      <p><strong>Integrantes:</strong> Pietro Fernandes e Lucas Torres • <strong>Turma:</strong> [preencher turma]</p>
+      <p>HTML monta as páginas, CSS cuida da aparência e JavaScript faz os botões funcionarem.</p>
+      <h2>Contagem para o Natal</h2><p id="contagem" class="contagem">Carregando...</p>
+    </div></section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Casa do Noel</strong> — Pietro Fernandes e Lucas Torres</p>
+      <p>Projeto escolar de Desenvolvimento Web • Loja demonstrativa</p>
+    </div>
+  </footer>
+
+  <div id="fundo-carrinho" class="fundo-carrinho" hidden></div>
+  <aside id="painel-carrinho" class="painel-carrinho" role="dialog" aria-label="Sacola de compras" aria-modal="true" hidden>
+    <div class="linha"><h2>Minha sacola</h2><button id="fechar-carrinho" type="button">Fechar ×</button></div>
+    <div id="itens-carrinho"></div>
+    <div class="resumo-sacola">
+      <strong>Total: <span id="total-carrinho">R$ 0,00</span></strong>
+      <p>Compra fictícia, somente para a atividade.</p>
+      <button id="limpar-carrinho" class="botao-secundario" type="button">Limpar sacola</button>
+    </div>
+  </aside>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

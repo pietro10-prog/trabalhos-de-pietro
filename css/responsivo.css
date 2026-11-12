@@ -1,0 +1,34 @@
+/* O site também precisa funcionar em tablets e celulares. */
+@media (max-width: 1000px) {
+  .cabecalho-conteudo { flex-wrap: wrap; padding: 12px 0; }
+  .menu { order: 3; width: 100%; justify-content: center; }
+  .grade-produtos { grid-template-columns: repeat(3, 1fr); }
+  .categorias { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 650px) {
+  .botao-menu { display: block; margin-left: auto; }
+  .menu { display: none; flex-direction: column; align-items: stretch; }
+  .menu.aberto { display: flex; }
+  .menu a { text-align: center; }
+  .acoes { order: 4; width: 100%; justify-content: center; }
+  .slide.ativo, .banner-interno .container { grid-template-columns: 1fr; }
+  .slide { min-height: 0; }
+  .slide img { height: 235px; }
+  .slide h1, .slide h2 { font-size: 2.2rem; }
+  .banner-interno img { height: 180px; }
+  .secao { padding: 38px 0; }
+  .grade-produtos, .categorias, .mini-galeria, .galeria { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .card img { height: 160px; }
+  .card-info { padding: 12px; }
+  .card h3 { font-size: .92rem; }
+  .card p { font-size: .8rem; }
+  .categorias img, .mini-galeria img, .foto-galeria img { height: 130px; }
+  .duas-colunas { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (max-width: 360px) {
+  .grade-produtos { grid-template-columns: 1fr; }
+  .card img { height: 230px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none; transition: none; scroll-behavior: auto; }
+}

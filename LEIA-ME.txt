@@ -1,0 +1,60 @@
+AV2 - CASA DO NOEL - PROJETO SIMPLES
+==================================
+
+Equipe: Pietro Fernandes e Lucas Torres
+Turma: [preencher turma]
+Professor: Samuel Elias
+
+COMO ABRIR NO VS CODE
+1. Extraia o arquivo ZIP.
+2. Abra a pasta CasaDoNoel_Pietro_Fernandes_Lucas_Torres_VSCode no VS Code.
+3. Abra index.html com a extensão Live Server.
+   Você também pode abrir index.html com duplo clique no Chrome.
+
+ESTRUTURA
+- index.html: início com carrossel e destaques.
+- produtos.html: os 50 produtos com filtro, busca e sacola.
+- sobre.html: história fictícia, missão, visão e valores.
+- galeria.html: imagens com ampliação.
+- contato.html: formulário escolar.
+- css/style.css: aparência, cores, cards e cabeçalho.
+- css/responsivo.css: adaptação ao celular.
+- js/produtos.js: os 50 objetos do catálogo.
+- js/script.js: os recursos em JavaScript.
+- img/: logotipo, produtos e fotos ilustrativas.
+- audio/: música e som curto de sino.
+
+RECURSOS DA AV2
+1. Carrossel automático + botões e indicadores.
+2. Efeito parallax na página inicial.
+3. Música (controlada por botão) e sino na sacola.
+4. Produtos criados com JavaScript.
+5. Busca e filtro por categoria.
+6. Sacola: adicionar, remover, quantidade, total e localStorage.
+7. Contagem regressiva até o Natal.
+8. Validação do formulário (não envia mensagens).
+Extras: menu móvel e galeria com janela ampliada.
+
+INFORMAÇÕES IMPORTANTES
+- HTML, CSS e JavaScript puros: sem frameworks.
+- Imagens locais em WebP, com aparência fotográfica, geradas/compostas
+  digitalmente para a atividade; não são fotos de mercadorias reais.
+- Este é um trabalho escolar e não tem checkout ou contato real.
+- Preencha a turma e revise o código para conseguir explicá-lo.
+- Não existe arquivo de roteiro de apresentação na pasta.
+
+PARA ENTREGAR
+1. Publique o site e o código no GitHub Pages.
+2. Grave um vídeo real de pelo menos 15 min com todos os integrantes.
+3. Publique o vídeo no YouTube como NÃO LISTADO.
+4. Preencha os links a seguir e salve a versão final no ZIP.
+
+Link do site: _______________________________________________
+Link do repositório: _________________________________________
+Link do vídeo: ______________________________________________
+
+CRÉDITOS
+- Imagens digitais: materiais gerados/combinados com auxílio de IA.
+- Áudios: arquivos de demonstração locais da versão anterior.
+- Código: projeto-base adaptado para estudo; alunos devem revisar e
+  personalizar, conforme a exigência de autoria e apresentação.
